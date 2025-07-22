@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Itinerary Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Travel Itinerary Planner</h1>
+
+    <form id="activity-form">
+      <input type="text" id="activity-name" placeholder="Activity Name" required>
+      <input type="text" id="time-slot" placeholder="Time Slot (e.g. 10:00 AM – 12:00 PM)" required>
+      <input type="text" id="location" placeholder="Location / Notes" required>
+      <input type="number" id="budget" placeholder="Budget Estimate (₹)" required>
+      <input type="date" id="activity-date" required>
+      <button type="submit">Add Activity</button>
+    </form>
+
+    <div id="budget-summary" class="summary"></div>
+    <div id="travel-tip" class="tip"></div>
+
+    <h2> Itinerary</h2>
+    <div id="itinerary"></div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
